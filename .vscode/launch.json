@@ -1,0 +1,15 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "pwa-msedge",
+            "request": "launch",
+            "name": "Open index.html",
+            "file": "c:\\Users\\gianf\\OneDrive\\Documentos\\GitHub\\2022-LPIII-G4-SG06\\P01-HTML\\index.html"
+        }
+    ]
+}
