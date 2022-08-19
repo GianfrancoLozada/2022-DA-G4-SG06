@@ -4,11 +4,12 @@
     // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         
         {
             "type": "pwa-msedge",
             "request": "launch",
-            "name": "Open index.html",
+            "name": "Open Experiencia Práctica N°1.html",
             "file": "c:\\Users\\gianf\\OneDrive\\Documentos\\GitHub\\2022-LPIII-G4-SG06\\P01-HTML\\index.html"
         }
     ]
