@@ -1,0 +1,32 @@
+h1{
+    color: rgb(226, 177, 43);
+    font-size: 75px;
+    font-family: 'Times New Roman', Times, serif;
+}
+p::first-letter{
+    color: rgb(18, 151, 0);
+    font-size: large;
+}
+ul li:nth-child(1){
+    font-size:40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a:hover {
+    text-decoration: overline;
+}
+input:focus {
+    background-color: rgb(255, 230, 0);
+}
+label{
+    color:rgb(20, 173, 220)
+}
+[href] {
+    color: rgb(184, 67, 0);
+}
+#C1{
+    color: rgb(0, 38, 255);
+    border-style: dotted;
+}
+.AAA{
+    border-style: ridge;
+}

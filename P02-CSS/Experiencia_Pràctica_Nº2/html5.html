@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        form {
+            margin: 0 auto;
+            width: 400px;
+            padding: 1em;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+        }
+        input,
+        textarea {
+
+            font: 1em sans-serif;
+
+            width: 300px;
+            box-sizing: border-box;
+
+            border: 1px solid #999;
+        }
+        input:focus,
+        textarea:focus {
+
+           border-color: rgb(0, 122, 47);
+        }
+        textarea {
+
+            vertical-align: top;
+
+            height: 5em;
+        }
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="with=device-with, initial-scale=1.0">
+        <title>Grupo 6</title>
+        <meta name="keywords" content="ucsm sistemas tarea">
+        <meta name="description" content="tarea y actividad de DA">
+        <meta name="author" content="Grupo 6">
+
+        <meta propety="og:title" content="G6"/>
+        <meta propety="og:type" content="DA.G6"/>
+        <meta propety="og:url" content="https://www.ucsm.com"/>
+        <meta propety="og:image" image="https://www.ucsm.com/logo.png"/>
+
+    </head>
+    <body>
+        <H1>Grupo 6 Desarrollo de aplicaciones</H1>
+        <p>integrantes</p>
+        <li>Delgadillo Pacheco Rodrigo Alejandro</li>
+        <li>Lozada Bedregal Gianfranco</li>
+        <li>Pinto Ticona Nicole Alexandra</li>
+        <li>Valverde Riveros Maria Fernand</li>
+        <em>Para reiniciar la pagina en una nueva pestaña presione </em>
+        <a href="index.html" title="Reinicio de pagina" target="_blank">aqui</a>
+    
+        <form action="Registro Consultorio" method="post">
+            
+            <label for="Nombre">Su primer nombre: </label>
+            <input type="text" id="Nombre" name="Nombre"><br/>
+
+            <label for="Apellido">Su Apellido: </label>
+            <input type="text" id="Apellido" name="Apellido"><br/>
+            
+            <label for="Num">Numero de celular: </label>
+            <input type="number" id="Num" name="Num"><br/>
+
+            <label for="SerM">Escoja su servicio medico: </label>
+            <select id="SerM" name="SerM">
+                <option value="Dentista">Dentista</option>
+                <option value="Obstetriz">Obstetriz</option>
+                <option value="Pediatra">Pediatra</option>
+            </select><br/>
+            
+            <label for="Desc">Describa su problema: </label>
+            <textarea name="Desc" id="Desc" cols="30" rows="5"></textarea><br/>
+
+            <label for="Fecha">Escoja su fecha de cita: </label>
+            <input type="date" name="Fecha" id="Fecha"><br/>
+            
+            <li class="button">
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </li>
+        </form>
+    </body>
+</html>
