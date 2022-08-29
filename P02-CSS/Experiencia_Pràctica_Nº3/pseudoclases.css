@@ -1,0 +1,6 @@
+a:hover {
+    text-decoration: none;
+    }
+input:focus {
+    background-color: blanchedalmond;
+    }

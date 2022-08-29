@@ -1,0 +1,7 @@
+p::first-letter {
+    color: red;
+    font-size: large;
+}
+::marker{
+    color:blue;
+}
