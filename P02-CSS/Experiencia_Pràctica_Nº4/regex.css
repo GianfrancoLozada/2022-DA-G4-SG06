@@ -1,0 +1,29 @@
+
+div[id*='1'] {
+    color: whitesmoke;
+    text-decoration-line: overline underline;
+  }
+
+a[class^='link'] {
+    flex-direction: row-reverse;
+    font-size: small;
+    text-indent: 50px;
+    letter-spacing: 2px;
+  }
+
+h1[class$='pagina3'] {
+    font-size: xxx-large;
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.733);
+}
+
+p[class*='pagina3-p'] {
+    color: rgb(81, 79, 79);
+}
+
+h1[id*='1'] {
+    color: #000000;
+    font-size: xxx-large;
+    padding-top: 45px;
+}
