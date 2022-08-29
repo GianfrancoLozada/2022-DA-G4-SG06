@@ -1,0 +1,69 @@
+H1{
+    color:lightblue;
+    font-size: 2cm;
+}
+p::first-letter{
+    color: rgb(18, 151, 0);
+    font-size: 1cm;
+}
+li::first-letter{
+    color:crimson;
+    font-size: 0.5cm;
+}
+
+H1::first-letter{
+    color:aquamarine;
+    font-size: 20mm;
+}
+li{
+    color:blueviolet;
+    font-size: 3mm;
+}
+
+em::first-letter{
+    color:deeppink;
+    font-size: 15q;
+}
+option{
+    color:hotpink;
+    font-size: 30q;
+}
+
+em{
+    color:indigo;
+    font-size: 0.3in;
+}
+p{
+    color:red;
+    font-size: 0.2in;
+}
+
+button::first-letter{
+    color:rgb(78, 147, 216);
+    font-size: 2pc;
+}
+button{
+    color:lightcoral;
+    font-size: 1pc;
+}
+
+div[class*="test"] {
+   color:grey;
+   font-size: 0.5pt;
+}
+input{
+    color:rosybrown;
+    font-size: 14pt;
+}
+
+a{
+    color:black;
+    font-size: 20px;
+}
+label{
+    color:greenyellow;
+    font-size: 40px;
+}
+
+
+

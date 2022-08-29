@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 2 DA</title>
+    <meta name="keywords" content="ucsm sistemas">
+    <meta name="descripcion" content="UTILIZACIÓN DE SELECTORES POR SU ID">
+    <meta name="author" content="Delgadillo Pacheco Rodrigo Alejandro, Lozada Bedregal Gianfranco, Nicole Pinto, Valverde Riveros Maria Fernanda">
+</head>
+<link href="medidasrelativas.css" rel="stylesheet" type="text/css">
+<body>
+    <H1>Grupo 6 Desarrollo de aplicaciones</H1>
+        <p>Integrantes</p>
+        <li>Delgadillo Pacheco Rodrigo Alejandro</li>
+        <li>Lozada Bedregal Gianfranco</li>
+        <li>Pinto Ticona Nicole Alexandra</li>
+        <li>Valverde Riveros Maria Fernanda</li>
+        <em>Para reiniciar la pagina en una nueva pestaña presione </em>
+        <a href="index.html" title="Reinicio de pagina" target="_blank">aqui</a>
+    
+        <form action="Registro Consultorio" method="post">
+            
+            <label for="Nombre">Su primer nombre: </label>
+            <input type="text" id="Nombre" name="Nombre"><br/>
+
+            <label for="Apellido">Su Apellido: </label>
+            <input type="text" id="Apellido" name="Apellido"><br/>
+            
+            <label for="Num">Numero de celular: </label>
+            <input type="number" id="Num" name="Num"><br/>
+
+            <label for="SerM">Escoja su servicio medico: </label>
+            <select id="SerM" name="SerM">
+                <option value="Dentista">Dentista</option>
+                <option value="Obstetriz">Obstetriz</option>
+                <option value="Pediatra">Pediatra</option>
+            </select><br/>
+            
+            <label for="Desc">Describa su problema: </label>
+            <textarea name="Desc" id="Desc" cols="30" rows="5"></textarea><br/>
+
+            <label for="Fecha">Escoja su fecha de cita: </label>
+            <input type="date" name="Fecha" id="Fecha"><br/>
+            
+            <li class="button">
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </li>
+        </form>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+H1::first-letter{
+    color:antiquewhite;
+    font-size: 2em;
+}
+
+p{
+    color:blueviolet;
+    font-size: 5ex;
+}
+
+li::first-letter{
+    color:darkcyan;
+    font-size: 2ch;
+}
+
+li{
+    color:indianred;
+    font-size: 1rem;
+}
+
+em{
+    color:lightblue;
+    font-size: 6lh;
+}
+
+a{
+    color:lightsalmon;
+    font-size: 8vw;
+}
+
+label{
+    color:midnightblue;
+    font-size: 9vh;
+}
+
+button::first-letter{
+    color:palevioletred;
+    font-size: 8vmin;
+}
+
+button{
+    color:aquamarine;
+    font-size: 6vmax;
+}
+
