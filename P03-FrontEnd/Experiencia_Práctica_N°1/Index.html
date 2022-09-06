@@ -1,0 +1,207 @@
+<!Doctype HTML>
+<HTML>
+    <Head>
+        <Style>
+            .BlockR{
+                background-color:Red;
+
+                
+            }
+            .BlockB{
+                background-color:blue;
+                width: 100px;
+                height: 50px;
+
+
+            }
+            #smaller{
+                width: 100px;
+                height: 100px;
+            }
+            #bigger{
+                width: 150px;
+                height: 150px;
+            }
+            H1{
+                height: 200px;
+                width: 700px;
+                background-color: green;
+                color:white;
+
+                display: flex;
+                flex-direction: row-reverse;
+            }
+            H2{
+                height: 200px;
+                width: 700px;
+                background-color: yellow;
+                color:black;
+
+                display: flex;
+                flex-direction: row;
+            }
+            .Wrapped{
+                height: 50px;
+                width: 50px;
+                text-align: center;
+            }
+            #Morado{
+                background-color: purple;
+                color: white;
+            }
+            #Negro{
+                background-color: black;
+                color: white;
+            }
+            #Rosa{
+                background-color: pink;
+                color: black;
+            }
+            #Celeste{
+                background-color: skyblue;
+                color: black;
+            }
+            H3{
+                width: 140px;
+                height: 140px;
+                border-style: groove;
+                border-color: aqua;
+            }
+            H4{
+                flex: 1;
+                width: 400px;
+                height: 250px;
+                border-style: initial;
+                border-color: darkslategray;
+                text-align: center;
+                display: flex;
+                border-style: dotted;
+            }
+            .Stadistica{
+                width: 100px;
+                display: flex;
+                align-items: center;
+            }
+            .Modificador{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        </Style>
+    </Head>
+    <Body>
+        <H1>A
+        <div class="BlockR" id="bigger"></div>
+        <div class="BlockR" id="smaller"></div>
+        <div class="BlockB"></div>
+        <div class="BlockR" id="smaller"></div>
+        <div class="BlockR" id="bigger"></div>
+        </H1>
+        <H2>B
+            <div class="BlockR" id="bigger"></div>
+            <div class="BlockR" id="smaller"></div>
+            <div class="BlockB"></div>
+            <div class="BlockR" id="smaller"></div>
+            <div class="BlockR" id="bigger"></div>
+        </H2>
+        <H3 Style="display: flex; flex-wrap: nowrap;">
+            <div class="Wrapped" id="Morado"></div>
+            <div class="Wrapped" id="Negro"></div>
+            <div class="Wrapped" id="Rosa"></div>
+        </H3>
+        <H3 Style="display: flex; flex-wrap: nowrap; width: 100px; height: 100px;">
+            <div class="Wrapped" id="Morado"></div>
+            <div class="Wrapped" id="Negro"></div>
+            <div class="Wrapped" id="Rosa"></div>
+        </H3>
+        <H3 Style="display: flex; flex-wrap: nowrap; width: 100px; height: 100px;">
+            <div class="Wrapped" id="Morado">☆1☆</div>
+            <div class="Wrapped" id="Negro">☆2☆</div>
+            <div class="Wrapped" id="Rosa">☆3☆</div>
+        </H3>
+        <H3 Style="display: flex; flex-wrap: wrap;">
+            <div class="Wrapped" id="Morado">☆1☆</div>
+            <div class="Wrapped" id="Negro">☆2☆</div>
+            <div class="Wrapped" id="Rosa">☆3☆</div>
+        </H3>
+        <H3 Style="display: flex; flex-wrap: wrap-reverse;">
+            <div class="Wrapped" id="Morado">☆1☆</div>
+            <div class="Wrapped" id="Negro">☆2☆</div>
+            <div class="Wrapped" id="Rosa">☆3☆</div>
+        </H3>
+        <H3 Style="display: flex; flex-wrap: nowrap; width: 500px; align-items: stretch;">
+            <div class="Wrapped" id="Morado"></div>
+            <div class="Wrapped" id="Negro" style="flex-grow: 1; width: 2px;"></div>
+            <div class="Wrapped" id="Rosa" style="flex-grow: 2; width: 2px;"></div>
+            <div class="Wrapped" id="Negro" style="flex-shrink: 1; width: 2px;"></div>
+            <div class="Wrapped" id="Morado" style="flex-grow: 2; width: 2px;"></div>
+            <div class="Wrapped" id="Negro" style="flex-grow: 3; width: 2px;"></div>
+            <div class="Wrapped" id="Rosa" style="flex-grow: 2; width: 2px;"></div>
+        </H3>
+        <H4 style="align-items: flex-start;">
+            <div class="Stadistica" Id="Morado" Style="height: 50px;">A</div>
+            <div class="Stadistica" Id="Negro" Style="height: 150px;">B</div>
+            <div class="Stadistica" Id="Rosa" Style="height: 100px;">C</div>
+            <div class="Stadistica" Id="Celeste" Style="height: 200px;">D</div>
+        </H4>
+        <H4 style="align-items: flex-end;">
+            <div class="Stadistica" Id="Morado" Style="height: 50px;">A</div>
+            <div class="Stadistica" Id="Negro" Style="height: 150px;">B</div>
+            <div class="Stadistica" Id="Rosa" Style="height: 100px;">C</div>
+            <div class="Stadistica" Id="Celeste" Style="height: 200px;">D</div>
+        </H4>
+        <H4 style="align-items: center;">
+            <div class="Stadistica" Id="Morado" Style="height: 50px;">A</div>
+            <div class="Stadistica" Id="Negro" Style="height: 150px;">B</div>
+            <div class="Stadistica" Id="Rosa" Style="height: 100px;">C</div>
+            <div class="Stadistica" Id="Celeste" Style="height: 200px;">D</div>
+        </H4>
+        <H4 style="align-items: stretch;">
+            <div class="Stadistica" Id="Morado" Style="min-height: 50px;">A</div>
+            <div class="Stadistica" Id="Negro" Style="min-height: 150px;">B</div>
+            <div class="Stadistica" Id="Rosa" Style="min-height: 100px;">C</div>
+            <div class="Stadistica" Id="Celeste" Style="min-height: 200px;">D</div>
+        </H4>
+        <H4 style="align-items: baseline;">
+            <div class="Stadistica" Id="Morado" Style="min-height: 50px;">A</div>
+            <div class="Stadistica" Id="Negro" Style="min-height: 150px;">B</div>
+            <div class="Stadistica" Id="Rosa" Style="min-height: 100px;">C</div>
+            <div class="Stadistica" Id="Celeste" Style="min-height: 200px;">D</div>
+        </H4>
+        <H3 style="align-content: flex-start;" class="Modificador">
+            <div class="Wrapped" id="Morado"></div>
+            <div class="Wrapped" id="Celeste"></div>
+            <div class="Wrapped" id="Negro"></div>
+            <div class="Wrapped" id="Rosa"></div>
+        </H3>
+        <H3 style="align-content: center;" class="Modificador">
+            <div class="Wrapped" id="Morado"></div>
+            <div class="Wrapped" id="Celeste"></div>
+            <div class="Wrapped" id="Negro"></div>
+            <div class="Wrapped" id="Rosa"></div>
+        </H3>
+        <H3 style="align-content: flex-end;" class="Modificador">
+            <div class="Wrapped" id="Morado"></div>
+            <div class="Wrapped" id="Celeste"></div>
+            <div class="Wrapped" id="Negro"></div>
+            <div class="Wrapped" id="Rosa"></div>
+        </H3>
+        <H3 style="align-content: space-between;" class="Modificador">
+            <div class="Wrapped" id="Morado"></div>
+            <div class="Wrapped" id="Celeste"></div>
+            <div class="Wrapped" id="Negro"></div>
+            <div class="Wrapped" id="Rosa"></div>
+        </H3>
+        <H3 style="align-content: space-around;" class="Modificador">
+            <div class="Wrapped" id="Morado"></div>
+            <div class="Wrapped" id="Celeste"></div>
+            <div class="Wrapped" id="Negro"></div>
+            <div class="Wrapped" id="Rosa"></div>
+        </H3>
+        <H3 style="align-content: stretch;" class="Modificador">
+            <div class="Wrapped" id="Morado"></div>
+            <div class="Wrapped" id="Celeste"></div>
+            <div class="Wrapped" id="Negro"></div>
+            <div class="Wrapped" id="Rosa"></div>
+        </H3>
+    </Body>
+</HTML>
