@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!Doctype HTML>
 <HTML>
     <Head>
@@ -87,4 +88,95 @@
             </div>
           </div>
     </body>
+=======
+<!Doctype HTML>
+<HTML>
+    <Head>
+        <style>
+            .item1 { grid-area: img1; background-image: url("celular.jpg"); background-size: cover;}
+            .item2 { grid-area: img2; background-image: url("rotary.jfif"); background-size: cover;}
+            .item3 { grid-area: img3; background-image: url("keyboard.jpg"); background-size: cover;}
+            .item4 { grid-area: img4; background-image: url("PC.jfif"); background-size: cover;}
+            .item5 { grid-area: img5; background-image: url("Diskete.jpg"); background-size: cover;}
+            .item6 { grid-area: img6; background-image: url("Controller.jpg"); background-size: cover;}
+            .item7 { grid-area: img7; background-image: url("laptop.jfif"); background-size: cover;}
+            
+            
+            @media only screen and (min-width: 600px){ .grid-container {
+                    display: grid;
+                    grid-template:
+                    'img1 img1 img2 img2'
+                    'img3 img4 img4 img5'
+                    'img6 img7 img7 img5';
+                    background-color: #2196F3;
+                }
+            
+                .grid-container > div {
+                    background-color: rgba(255, 255, 255, 0.8);
+                    padding: 50px;
+                    font-size: 50px;
+
+                    border-style: double;
+                }
+            }
+            @media only screen and (max-width: 600px){ .grid-container {
+                    display: grid;
+                    grid-template:
+                    'img1 img1'
+                    'img2 img2'
+                    'img3 img5'
+                    'img6 img5'
+                    'img4 img4'
+                    'img7 img7';
+                    background-color: #2196F3;
+                }
+            
+                .grid-container > div {
+                    background-color: rgba(255, 255, 255, 0.8);
+                    padding: 35px;
+                    font-size: 50px;
+                    display: flex;
+                    flex-wrap: nowrap;
+
+                    border-style: double;
+                }
+            }
+            @media only screen and (min-width: 1200px){ .grid-container {
+                    display: grid;
+                    grid-template:
+                    'img1 img1 img2 img2 img6 img5'
+                    'img3 img4 img4 img7 img7 img5';
+                    background-color: #2196F3;
+                }
+            
+                .grid-container > div {
+                    padding: 20px;
+                    padding-bottom: 100px;
+                    font-size: 50px;
+
+                    border-style: double;
+
+                }
+            }
+        </style>
+    </Head>
+    <body>
+        <div class="grid-container">
+            <div class="item1">
+            </div>
+            <div class="item2">
+            </div>
+            <div class="item3">
+            </div>  
+            <div class="item4">
+            </div>
+            <div class="item5">
+            </div>
+            <div class="item6">
+            </div>
+            <div class="item7">                
+            </div>
+          </div>
+    </body>
+>>>>>>> 617c5d34e1eae59fa14e6c98104fbf85d54553e9
 </HTML>

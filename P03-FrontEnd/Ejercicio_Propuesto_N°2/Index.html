@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 2</title>
+    <meta name="keywords" content="ucsm sistemas">
+    <meta name="descripcion" content="UTILIZACIÓN DE FLEXBOX">
+    <meta name="author" content="Delgadillo Pacheco Rodrigo Alejandro, Lozada Bedregal Gianfranco, Nicole Pinto, Valverde Riveros Maria Fernanda">
+    <style>
+        .titulo {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 27px;
+            background-color: #10042b;
+            color: white;
+            text-align: center;
+            
+        }
+
+        .Info{
+            background-color: #03011c;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .Info div{
+            font-size: 21px;
+            color: white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 10px;
+            text-align: center;
+            width: 400px;
+            height: 320px;
+        }
+        .Info p{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            color: white;
+            text-align: justify;
+            margin: auto 17px;
+        }
+
+        button{
+            font-family: 'Times New Roman', Times, serif;
+            margin: 15px;
+            color: white;
+            background-color: rgba(40, 24, 83, 0.986);
+            border: 5ch;
+        }
+        @media only screen and (max-width: 600px) {
+            .Info {
+            display:flex;
+            flex-direction:column;
+            }
+            .Info div{
+            width: 360px;
+            height: 320px;
+            }
+        }
+    </style>
+    
+</head>
+
+<body bgcolor="#03011c">
+    <div class="titulo">
+        <p>welcome to wizarding world</p>
+        <h1>BIENVENIDO AL MUNDO DE LOS MAGOS</h1>
+        <button onclick="location.href='https://www.wizardingworld.com/'"><b>EMPIEZA LA AVENTURA</b></button>
+     </div>
+    <div class="Info">
+        <div>
+            <h2>Verdadero o falso: Edición Slytherin</h2>
+            <img src="https://images.ctfassets.net/usf1vwtuqyxm/5S5XuqublsjKoyTUfOoCIQ/be2a6be5ab2886388b935fad12c59243/WB-HP-F2-chamber-secrets-draco-malfoy-slytherin-common-room.jpg"  width="358" height="218">
+            <p>A lo largo de los años, Slytherin fue el hogar de muchos estudiantes ambiciosos, como Leta Lestrange, Severus Snape, Draco Malfoy... oh, y Tom Riddle. Veamos cuánto sabes sobre la casa de la serpiente.</p>
+            <button onclick="location.href='https://www.wizardingworld.com/quiz/true-false-slytherin-quiz'"><b>INICIAR TEST</b></button>
+        </div>
+
+        <div>
+            <h2>Clasificación: Las llegadas más y menos espectaculares a Hogwarts</h2>
+            <img src="https://www.latercera.com/resizer/KjvPdzV23QfLOWxcCh0k44XaUDY=/768x0/smart/filters:quality(70):format(webp):no_upscale()/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/FEZEKI36OBCALEE7UNABV3E5RI.jpg" width="358" height="208">
+            <p>Un castillo en una colina, protegido por la magia, con aulas en las mazmorras y techos embrujados: Hogwarts era bastante espectacular, así que quizás no es de extrañar que ciertos personajes tuvieran la tentación de hacer una pequeña entrada. Pero, por supuesto, no todas las llegadas se produjeron según lo previsto. Disfruta de este repaso a algunas de las mejores -y peores- entradas de Hogwarts.</p>
+            <button onclick="location.href='https://www.wizardingworld.com/features/ranked-most-and-least-spectacular-arrivals-at-hogwarts'"><b>VER</b></button>
+            
+        </div>
+            
+        <div>
+            <h2>Todo lo que necesitas saber sobre Volver a Hogwarts 2022</h2>
+            <img src="https://images.ctfassets.net/usf1vwtuqyxm/34szhxtEMzNZr6Ue8CYanC/0a7ba94fa8d82028b953c35fe3a479e2/image.png" width="358" height="288">
+            <p>Desde un tour en TikTok de Tom Felton hasta una cuenta atrás a la antigua en la estación de King's Cross, así es como celebraremos la temporada de Regreso a Hogwarts este año.</p>
+            <button onclick="location.href='https://www.wizardingworld.com/news/everything-you-need-to-know-about-back-to-hogwarts-2022'"><b>ENTÉRATE</b></button>    
+        </div>
+    </div>
+    
+</body>
+</html>
