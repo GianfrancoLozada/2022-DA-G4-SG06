@@ -1,0 +1,22 @@
+@import "Reserva";
+
+$Font: Helvetica, sans-serif;
+$Color: rgb(0, 0, 136);
+$FontSize: 15px;
+
+$Color1: red;
+$Color3: Purple;
+
+body {
+    font-family: $Font;
+    font-size: $FontSize;
+    color: $Color;
+}
+
+#A1{
+    background-color: $Color1;
+}
+
+#A3{
+    background-color: $Color3;
+}

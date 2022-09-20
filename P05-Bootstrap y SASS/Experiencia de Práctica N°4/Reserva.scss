@@ -1,0 +1,29 @@
+$Color2: Green;
+$Color4: Black;
+
+H1{
+    display: flex;
+    flex-direction: row;
+    div{
+        width: 150px;
+        height: 150px;
+        border-radius: 10%;
+        float: right;
+    }
+}
+
+#A2{
+    @extend .Border;
+    background-color: $Color2;
+}
+
+#A4{
+    @extend .Border;
+    background-color: $Color4;
+}
+
+.Border{
+    border-style: double;
+    border-style: White;
+    border-radius: 50%;
+}

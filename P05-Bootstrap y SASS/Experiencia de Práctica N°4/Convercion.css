@@ -1,0 +1,38 @@
+H1 {
+  display: flex;
+  flex-direction: row;
+}
+H1 div {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  float: right;
+}
+
+#A2 {
+  background-color: Green;
+}
+
+#A4 {
+  background-color: Black;
+}
+
+.Border, #A2, #A4 {
+  border-style: double;
+  border-style: White;
+  border-radius: 50%;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  color: rgb(0, 0, 136);
+}
+
+#A1 {
+  background-color: red;
+}
+
+#A3 {
+  background-color: Purple;
+}/*# sourceMappingURL=Convercion.css.map */
