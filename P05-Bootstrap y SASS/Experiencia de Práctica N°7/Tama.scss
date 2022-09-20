@@ -1,0 +1,28 @@
+$sizes: 50px, 100px, 150px, 200px;
+
+@each $size in $sizes {
+    #Size-#{$size}{
+        width: $size;
+        height: $size;
+    
+    @if $size == 50px{
+            background-color: rgb(0, 255, 128);
+            border-radius: 10%;
+    }
+    @if $size == 100px{
+            background-color: rgb(119, 0, 255);
+            border-style: groove;
+            border-color: aqua;
+    }
+    @if $size == 150px{
+            background-color: rgb(255, 94, 0);
+            float: Right;
+    }
+    @if $size == 200px{
+            background-color: rgb(255, 0, 157);
+    }
+    @if $size == 250px{
+            background-color: crimson;
+    }
+}
+}
