@@ -1,5 +1,7 @@
 listaEstudiantes = []
 
+#Agregamos la Clase Estudiante
+#Agregamos sus respectivos atributos
 class Estudiantes(object):
     def __init__(self, _codigo, _nombres, _apellidos, _edad, _curso1, _curso2, _curso3, _pension):
         self.codigo = _codigo
@@ -26,69 +28,69 @@ class Estudiantes(object):
         print("¡Registro Exitoso!")
     def incluirEvento(self, _curso1, _curso2, _curso3):
         return ("Rectificación de Matricula: Curso_1: {} Curso_2: {} Curso_3: {}".format(_curso1, _curso2, _curso3))
+    
+    def ingresarDatos():
+        print("Registro de Estudiantes\n")
+        codigo = int(input("Ingrese el número de código: "))
+        nombres = input("Ingrese los Nombres: ")
+        apellidos = input("Ingrese los Apellidos: ")
+        edad = int(input("Ingrese la Edad: "))
+        curso1 = input("Ingrese el Curso 1: ")
+        curso2 = input("Ingrese el Curso 2: ")
+        curso3 = input("Ingrese el Curso 3: ")
+        pension = False
+        objAlumno = Estudiantes(codigo, nombres, apellidos, edad, curso1, curso2, curso3, pension)
+        listaEstudiantes.append(objAlumno)
+
+    def imprimirDatos():
+        print("Listado de Estudiantes\n")
+        for objAlumno in listaEstudiantes:
+            objAlumno.entregarDatos()
+            input("Presione cualquier tecla para salir")
 
 
-def matricular():
-    ingresarDatos()
-    print("¡Matrícula Exitosa!")
-    input("Presione cualquier tecla para salir")
-
-
-def ingresarDatos():
-    print("Registro de Estudiantes\n")
-    codigo = int(input("Ingrese el número de código: "))
-    nombres = input("Ingrese los Nombres: ")
-    apellidos = input("Ingrese los Apellidos: ")
-    edad = int(input("Ingrese la Edad: "))
-    curso1 = input("Ingrese el Curso 1: ")
-    curso2 = input("Ingrese el Curso 2: ")
-    curso3 = input("Ingrese el Curso 3: ")
-    pension = False
-    objAlumno = Estudiantes(codigo, nombres, apellidos, edad, curso1, curso2, curso3, pension)
-    listaEstudiantes.append(objAlumno)
-
-
-def imprimirDatos():
-    print("Listado de Estudiantes\n")
-    for objAlumno in listaEstudiantes:
-        objAlumno.entregarDatos()
+    def matricular():
+        Estudiantes.ingresarDatos()
+        print("¡Matrícula Exitosa!")
         input("Presione cualquier tecla para salir")
 
-def buscarEstudiante():
-    print("Buscar Estudiante\n")
-    codigo = int(input("Ingrese el número de código del estudiante a buscar: "))
-    for objAlumno in listaEstudiantes:
-        if codigo == objAlumno.codigo:
-            objAlumno.entregarDatos()
-            input("Presione cualquier tecla para salir")
-        elif print("¡Número incorrecto!"):
-            pass
+    def pagarPension():
+        print("Actualizar estado de pensión\n")
+        codigo = int(input("Ingrese el número de código del estudiante a buscar: "))
+        for objAlumno in listaEstudiantes:
+            if codigo == objAlumno.codigo:
+                pension = bool(input("Escribra 'True', si es que pagó y 'False' si es que no pagó: "))
+                objAlumno.editarPension(pension)
+                objAlumno.entregarDatos()
+                input("Presione cualquier tecla para salir")
+            elif print("¡Número incorrecto!"):
+                pass
 
-def modificarCursos():
-    print("Modificar Cursos\n")
-    codigo = int(input("Ingrese el número de código del estudiante a buscar: "))
-    for objAlumno in listaEstudiantes:
-        if codigo == objAlumno.codigo:
-            curso1 = input("Ingrese el Nuevo Curso 1: ")
-            curso2 = input("Ingrese el Nuevo Curso 2: ")
-            curso3 = input("Ingrese el Nuevo Curso 3: ")
-            objAlumno.editarCursos(curso1, curso2, curso3)
-            objAlumno.entregarDatos()
-            input("Presione cualquier tecla para salir")
-        elif print("¡Número incorrecto!"):
-            pass
+    def buscarEstudiante():
+        print("Buscar Estudiante\n")
+        codigo = int(input("Ingrese el número de código del estudiante a buscar: "))
+        for objAlumno in listaEstudiantes:
+            if codigo == objAlumno.codigo:
+                objAlumno.entregarDatos()
+                input("Presione cualquier tecla para salir")
+            elif print("¡Número incorrecto!"):
+                pass
+
+    def modificarCursos():
+        print("Modificar Cursos\n")
+        codigo = int(input("Ingrese el número de código del estudiante a buscar: "))
+        for objAlumno in listaEstudiantes:
+            if codigo == objAlumno.codigo:
+                curso1 = input("Ingrese el Nuevo Curso 1: ")
+                curso2 = input("Ingrese el Nuevo Curso 2: ")
+                curso3 = input("Ingrese el Nuevo Curso 3: ")
+                objAlumno.editarCursos(curso1, curso2, curso3)
+                objAlumno.entregarDatos()
+                input("Presione cualquier tecla para salir")
+            elif print("¡Número incorrecto!"):
+                pass
  
-def pagarPension():
-    print("Actualizar estado de pensión\n")
-    codigo = int(input("Ingrese el número de código del estudiante a buscar: "))
-    for objAlumno in listaEstudiantes:
-        if codigo == objAlumno.codigo:
-            pension = bool(input("Escribra 'True', si es que pagó y 'False' si es que no pagó: "))
-            objAlumno.editarPension(pension)
-            objAlumno.entregarDatos()
-            input("Presione cualquier tecla para salir")
-        elif print("¡Número incorrecto!"):
-            pass
+
 def salir():
     print("Salida inminente...!")
     exit()
@@ -112,15 +114,15 @@ def main():
         opcion = int(input("Opcion: "))
 
         if opcion == 1:
-            matricular()
+            Estudiantes.matricular()
         elif opcion == 2:
-            imprimirDatos()
+            Estudiantes.imprimirDatos()
         elif opcion == 3:
-            buscarEstudiante()
+            Estudiantes.buscarEstudiante()
         elif opcion == 4:
-            pagarPension()
+            Estudiantes.pagarPension()
         elif opcion == 5:
-            modificarCursos()
+            Estudiantes.modificarCursos()
         elif opcion == 6:
             salir()
 
