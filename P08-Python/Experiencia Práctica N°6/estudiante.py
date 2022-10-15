@@ -1,8 +1,8 @@
-listaEstudiantes = []
+listaEstudiante = []
 
 #Agregamos la Clase Estudiante
 #Agregamos sus respectivos atributos
-class Estudiantes(object):
+class Estudiante(object):
     def __init__(self, _codigo, _nombres, _apellidos, _edad, _curso1, _curso2, _curso3, _pension):
         self.codigo = _codigo
         self.nombres = _nombres
@@ -30,7 +30,7 @@ class Estudiantes(object):
         return ("Rectificación de Matricula: Curso_1: {} Curso_2: {} Curso_3: {}".format(_curso1, _curso2, _curso3))
     
     def ingresarDatos():
-        print("Registro de Estudiantes\n")
+        print("Registro de Estudiante\n")
         codigo = int(input("Ingrese el número de código: "))
         nombres = input("Ingrese los Nombres: ")
         apellidos = input("Ingrese los Apellidos: ")
@@ -39,25 +39,25 @@ class Estudiantes(object):
         curso2 = input("Ingrese el Curso 2: ")
         curso3 = input("Ingrese el Curso 3: ")
         pension = False
-        objAlumno = Estudiantes(codigo, nombres, apellidos, edad, curso1, curso2, curso3, pension)
-        listaEstudiantes.append(objAlumno)
+        objAlumno = Estudiante(codigo, nombres, apellidos, edad, curso1, curso2, curso3, pension)
+        listaEstudiante.append(objAlumno)
 
     def imprimirDatos():
-        print("Listado de Estudiantes\n")
-        for objAlumno in listaEstudiantes:
+        print("Listado de Estudiante\n")
+        for objAlumno in listaEstudiante:
             objAlumno.entregarDatos()
             input("Presione cualquier tecla para salir")
 
 
     def matricular():
-        Estudiantes.ingresarDatos()
+        Estudiante.ingresarDatos()
         print("¡Matrícula Exitosa!")
         input("Presione cualquier tecla para salir")
 
     def pagarPension():
         print("Actualizar estado de pensión\n")
         codigo = int(input("Ingrese el número de código del estudiante a buscar: "))
-        for objAlumno in listaEstudiantes:
+        for objAlumno in listaEstudiante:
             if codigo == objAlumno.codigo:
                 pension = bool(input("Escribra 'True', si es que pagó y 'False' si es que no pagó: "))
                 objAlumno.editarPension(pension)
@@ -69,7 +69,7 @@ class Estudiantes(object):
     def buscarEstudiante():
         print("Buscar Estudiante\n")
         codigo = int(input("Ingrese el número de código del estudiante a buscar: "))
-        for objAlumno in listaEstudiantes:
+        for objAlumno in listaEstudiante:
             if codigo == objAlumno.codigo:
                 objAlumno.entregarDatos()
                 input("Presione cualquier tecla para salir")
@@ -79,7 +79,7 @@ class Estudiantes(object):
     def modificarCursos():
         print("Modificar Cursos\n")
         codigo = int(input("Ingrese el número de código del estudiante a buscar: "))
-        for objAlumno in listaEstudiantes:
+        for objAlumno in listaEstudiante:
             if codigo == objAlumno.codigo:
                 curso1 = input("Ingrese el Nuevo Curso 1: ")
                 curso2 = input("Ingrese el Nuevo Curso 2: ")
@@ -105,7 +105,7 @@ def main():
         print("")
         print("Seleccione una de las siguientes opciones:")
         print("1.- Matricular un Nuevo Estudiante")
-        print("2.- Mostrar Estudiantes")
+        print("2.- Mostrar Estudiante")
         print("3.- Buscar Estudiante")
         print("4.- Modificar Pensión")
         print("5.- Modificar Cursos")
@@ -114,15 +114,15 @@ def main():
         opcion = int(input("Opcion: "))
 
         if opcion == 1:
-            Estudiantes.matricular()
+            Estudiante.matricular()
         elif opcion == 2:
-            Estudiantes.imprimirDatos()
+            Estudiante.imprimirDatos()
         elif opcion == 3:
-            Estudiantes.buscarEstudiante()
+            Estudiante.buscarEstudiante()
         elif opcion == 4:
-            Estudiantes.pagarPension()
+            Estudiante.pagarPension()
         elif opcion == 5:
-            Estudiantes.modificarCursos()
+            Estudiante.modificarCursos()
         elif opcion == 6:
             salir()
 
