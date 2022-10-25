@@ -1,0 +1,13 @@
+<h1>Actualice el dato</h1>
+<h4>RECUERDE QUE LOS NUMEROS NO DEBEN PASAR LOS 2 DIGITOS</h4>
+
+<form action="updaterecord/{{ mymember.id }}" method="post">
+{% csrf_token %}
+Number 1::<br>
+<input name="first" value="{{ mymember.num1 }}" min="1" max="10">
+<br><br>
+Number 2:<br>
+<input name="last" value="{{ mymember.num2 }}" min="1" max="10">
+<br><br>
+<input type="submit" value="Submit">
+</form>

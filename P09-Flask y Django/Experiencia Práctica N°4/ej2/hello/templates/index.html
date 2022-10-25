@@ -1,0 +1,22 @@
+<h1>Operadores</h1>
+<h4>numero1/numero2/suma/resta/multiplicacion/division/potencia</h4>
+<table border="1">
+{% for x in mymembers %}
+<tr>
+<td>{{ x.id }}</td>
+<td>{{ x.num1 }}</td>
+<td>{{ x.num2 }}</td>
+<td>{{ x.suma }}</td>
+<td>{{ x.resta }}</td>
+<td>{{ x.multi }}</td>
+<td>{{ x.div }}</td>
+<td>{{ x.poten }}</td>
+<td><a href="delete/{{ x.id }}">Borrar</a></td>
+<td><a href="update/{{ x.id }}">Reemplazar</a></td>
+</tr>
+{% endfor %}
+</table>
+
+<p>
+    <a href="add/">añadir mas datos</a>
+</p>
