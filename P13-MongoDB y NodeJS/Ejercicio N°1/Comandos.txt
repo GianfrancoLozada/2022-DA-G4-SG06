@@ -1,0 +1,38 @@
+• Mostrar todos los documentos de una colección ordenados de manera ascendente o
+descendente por un determinado campo o clave.
+ 
+db.basedatos.find().sort({campo:-1})
+ 
+db.products.find().sort({Stock:1})
+ 
+• Mostrar la cantidad de documento que tiene una colección
+ 
+db.basedatos.count({campo:"Texto o numero aqui"})
+ 
+db.products.count({Tipo:"Comida"})
+ 
+• Utilizar los siguientes operadores de comparación para la búsqueda de documentos en
+una colección:
+v $eq: igual que (equal)
+ 
+db.products.find({Nombre:{$eq:”Tren”}})
+ 
+v $ne: distinto de (not equal)
+ 
+db.products.find({Stock:{$ne:0}})
+ 
+v $gt: valores mayores que (greater than)
+ 
+db.products.find({Stock:{$gt:2}})
+ 
+v $gte: valores mayores o iguales que (greater than or equal)
+ 
+db.products.find({Stock:{$gte:2}})
+ 
+v $lt: valores menores que (lower than)
+ 
+db.products.find({Stock:{$lt:2}})
+ 
+v $lte: valores menores o iguales que (lower than or equal)
+ 
+db.products.find({Stock:{$lte:2}})

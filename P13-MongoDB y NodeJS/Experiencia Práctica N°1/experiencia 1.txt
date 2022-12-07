@@ -1,0 +1,52 @@
+a) Crear una base de datos llamada “ucsm” en mongoDB 
+ 
+test> use ucsm
+
+
+b) Crear 1 colección llamada “alumnos” 
+ucsm> db.alumnos.insertOne({DNI:"73668665",Nombre:"Diego Mendoza",Edad:20,Distrito:"Mariano Melgar",Celular:959899536})
+
+c) Insertar 10 documentos con los campos DNI, Nombre, Edad, Distrito, Celular. Los 3 primeros documentos deben tener los datos de los alumnos integrantes de su grupo del curso Desarrollo de Aplicaciones. 
+ 
+ 
+ucsm> db.alumnos.insert({DNI:"71646310",Nombre:"Joel Pinto",Edad:19,Distrito:"Jose Luis",Celular:9452325015})
+ 
+ucsm> db.alumnos.insert({DNI:"70432315",Nombre:"Sergio Suarez",Edad:19,Distrito:"Yanahuara",Celular:972513057})
+ 
+ucsm> db.alumnos.insert({DNI:"72848913",Nombre:"Nombre1",Edad:21,Distrito:"Miraflores",Celular:962510030})
+ 
+ucsm> db.alumnos.insert({DNI:"71656330",Nombre:"Nombre2",Edad:20,Distrito:"Selva Alegre",Celular:964965000})
+ 
+ucsm> db.alumnos.insert({DNI:"71656741",Nombre:"Nombre3",Edad:18,Distrito:"Cerro Colorado",Celular:964965209})
+ 
+ucsm> db.alumnos.insert({DNI:"70432789",Nombre:"Nombre4",Edad:18,Distrito:"Yanahuara",Celular:987456321})
+ 
+ucsm> db.alumnos.insert({DNI:"72848999",Nombre:"Nombre5",Edad:19,Distrito:"Mariano Melgar",Celular:962510000})
+ 
+ucsm> db.alumnos.insert({DNI:"70252789",Nombre:"Nombre6",Edad:21,Distrito:"Tiabaya",Celular:981056789})
+ 
+ucsm> db.alumnos.insert({DNI:"70329859",Nombre:"Nombre7",Edad:20,Distrito:"Yanahuara",Celular:962785230})
+
+d) Realizar 3 operaciones de búsqueda en la colección 
+ucsm> db.alumnos.find({Distrito:"Yanahuara"})
+ 
+ucsm> db.alumnos.find({Edad:19,Distrito:"Yanahuara"})
+ 
+ucsm> db.alumnos.find({ $or: [{Edad:20},{Edad:21}]})
+
+e) Realizar 3 operaciones de actualización en la colección 
+ 
+ucsm> db.alumnos.update({Nombre:"Nombre1"},{$set:{Edad:20}})
+ 
+ucsm> db.alumnos.update({Nombre:"Nombre5"},{$set:{Distrito:"Cayma"}})
+ 
+ucsm>db.alumnos.update({Nombre:"Nombre4"},{$set:{Numero:963258741}})
+ 
+
+f) Realizar 3 operaciones de borrado en la colección
+ 
+ucsm> db.alumnos.deleteOne({Nombre:"Nombre1"})
+ 
+ucsm> db.alumnos.deleteOne({Nombre:"Nombre2"})
+ 
+ucsm> db.alumnos.deleteOne({Nombre:"Nombre3"})
